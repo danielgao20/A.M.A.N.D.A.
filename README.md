@@ -9,7 +9,7 @@
 
 ## Project Notes
 
-![Homepage Image](https://cdn.discordapp.com/attachments/885725150576791612/913224605324410940/Screenshot_from_2021-11-24_16-26-43.png)
+<img src="https://github.com/danielgao20/AMANDA/blob/main/Website/frontend/static/images/amanda.png" alt="AMANDA Demo" width="700">
      
 A.M.A.N.D.A. is a trained medical assistant AI that detects medical diseases and provides treatments. More specifically, it can detect cellulitis and different degrees of burns. In addition to the detection, A.M.A.N.D.A. is capable of maintaining conversations.
 
