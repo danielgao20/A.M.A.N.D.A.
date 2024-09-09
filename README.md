@@ -1,11 +1,11 @@
-<a href="#"><img src="./Website/frontend/static/images/AMANDA_Logo.png" alt="AMANDA logo" width="150" /></a>
+<a href="#"><img src="./Website/frontend/static/images/AMANDA_Logo.png" alt="AMANDA logo" width="100" /></a>
 
 # A.M.A.N.D.A.
 *AI Medical Assistant & Neural Detection Application*
 
 ## Requirements
 - Node.js
-- Python
+- Python 3.8
 
 ## Project Notes
 
@@ -76,6 +76,10 @@ nom run build
 ## Design Notes
 
 A.M.A.N.D.A. was mainly made for those who don't have access to medical care, whether it be too expensive or unsupported in a certain area. Being lightweight, hasty, and straight to the point, A.M.A.N.D.A. strives to help those aforementioned in their small medical needs.
+
+## The Making of A.M.A.N.D.A.
+Learn about our building process:
+https://medium.com/ai-camp/team-5s-recap-of-the-incubator-internship-program-cebf2f643e9f
 
 ## License
 A.M.A.N.D.A. is available under the [MIT license](LICENSE).
