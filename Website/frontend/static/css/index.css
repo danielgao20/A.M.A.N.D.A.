@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mohave&family=Roboto+Condensed:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 /* Background */
 body {
   background: linear-gradient(-90deg, #12232E, #203647,  #007CC7);
   background-size: 300% 300%;
   animation: gradient 20s ease infinite;
+  font-family: 'Poppins', sans-serif;
 }
 
 @keyframes gradient {
@@ -21,11 +23,14 @@ body {
 
 /* NavBar */
 .logo {
-  width: 50px;
+  width: 50px;  /* Maintain a fixed width */
+  height: auto;  /* Ensure the height adjusts based on the width */
+  margin-right: 10px;  /* Space between logo and title */
 }
 
 /* Home Page */
 p {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   display: inline-block;
 }
@@ -38,46 +43,44 @@ p {
 }
 
 .briefInfo h2 {
+  font-family: 'Poppins', sans-serif;
   font-size: 32px;
     color: #fff;
     text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #fff,
-        0 0 82px #fff,
-        0 0 92px #fff,
-        0 0 102px #fff,
-        0 0 151px #fff;
+      0 0 3px rgba(255, 255, 255, 0.5),
+      0 0 5px rgba(255, 255, 255, 0.4),
+      0 0 7px rgba(255, 255, 255, 0.3);
 }
 
 .briefInfo h4 {
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
 }
 
 .chatroom {
-  background-color: rgba(0,0,0, .7);
-  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 8px 0 rgba(0,0,0, 0.3);
-  height: 575px;
-  align-items: center;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 2%;
-  left:50%;
-
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+  height: 600px;
+  width: 60%;  /* Increased width for a wider chatroom */
+  margin: 20px auto;  /* Center horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* Ensure input is at the bottom */
 }
 
 .chatroom .messages {
-  box-sizing: border-box;
-  padding: 0 20px;
-  margin: 10px 0 0;
-  height: 510px;
+  padding: 20px;
+  margin: 0;
+  flex-grow: 1;  /* Allow messages to grow and fill space */
   overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.1); /* Light background */
 }
 
 .chatroom .messages .message {
+  font-family: 'Poppins', sans-serif;
   background: rgba(255, 255, 255, 0.8);
   position: relative;
   padding: 5px 13px;
@@ -102,53 +105,74 @@ p {
 .chatroom .messages .message.right {
   float: right;
   clear: both;
+  background: #d1f1ff;
 }
 
 .chatroom .messages .message a {
   text-decoration: none;
-  color:#3498DB;
+  color:#d1f1ff;
 }
 
 .chatroom .input {
-  height: 3px;
-  padding: 30px;
-  width: 100%;
-  background: rgba(10, 208, 243, 0.836);
+  background: rgba(255, 255, 255, 0.9);  /* Modern white background */
+  padding: 10px;
+  border-top: 1px solid #ddd;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-between;  /* Align elements properly */
 }
 
-.chatroom .input input[type=text]{
-  height: 35px;
-  border-radius:10px;
-  margin:10px 0;
-  box-shadow:0 0 15px 4px rgba(0.54,0.07,0,0.06);
-  width: 100%;
+.chatroom .input input[type="text"] {
+  font-family: 'Poppins', sans-serif;
+  flex-grow: 1;  /* Fill available space */
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
 }
 
 .chatroom .input button {
-  background: transparent;
-  border: 1px solid darkblue;
-  height: 40px;
-  width: 45px;
-  font-size: 14px;
-  box-sizing: border-box;
+  background-color: #5287c1;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 16px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none;
+}
+
+.chatroom .input button:hover {
+  background-color: #6facec;
+  transition: none;
+}
+
+.chatroom .input button:focus {
+  outline: none;
+  transition: none;
+}
+
+.chatroom .input input[type="file"] {
+  display: none;
+  transition: none;
+}
+
+.chatroom .input button#image-upload-button {
+  margin-left: 10px;  /* Increased space between send and upload buttons */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none;
 }
 
 ion-icon {
   font-size: 20px;
-}
-
-.chatroom .input button:hover {
-  background: darkblue;
-  color: #FFF;
-  clear: both;
-  margin: 10px 0;
-  max-width: 600px;
 }
 
 .githubLogo{
@@ -163,7 +187,6 @@ ion-icon {
   width: 43px;
   font-size:39px;
   cursor: pointer;
-  transition: all 0.3s ease;
   border-radius: 50%;
   align-items:center;
   position: absolute;

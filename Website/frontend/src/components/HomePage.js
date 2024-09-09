@@ -10,7 +10,7 @@ export default class HomePage extends Component {
         this.state = {
             messages: [{
                 username: "A.M.A.N.D.A.",
-                content: <p>Hello there my name is A.M.A.N.D.A</p>
+                content: <p>Hello, I'm A.M.A.N.D.A, how may I help you today?</p>
             }],
             image: null,
         };
@@ -170,9 +170,6 @@ export default class HomePage extends Component {
                             <ion-icon name="cloud-upload" />
                         </button>
                     </form>
-                </div>
-                <div className="githubLogo">
-                    <a href="https://github.com/rvong65/MedicalAssistant"><button><ion-icon name="logo-github"></ion-icon></button></a>
                 </div>
             </>
         )
